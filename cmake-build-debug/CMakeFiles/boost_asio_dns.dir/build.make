@@ -57,43 +57,70 @@ include CMakeFiles/boost_asio_dns.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/boost_asio_dns.dir/flags.make
 
-CMakeFiles/boost_asio_dns.dir/main.cpp.o: CMakeFiles/boost_asio_dns.dir/flags.make
-CMakeFiles/boost_asio_dns.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/boost_asio_dns.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/boost_asio_dns.dir/main.cpp.o -c /home/yzs/CLionProjects/boost-asio-dns/main.cpp
+CMakeFiles/boost_asio_dns.dir/dns.cpp.o: CMakeFiles/boost_asio_dns.dir/flags.make
+CMakeFiles/boost_asio_dns.dir/dns.cpp.o: ../dns.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/boost_asio_dns.dir/dns.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/boost_asio_dns.dir/dns.cpp.o -c /home/yzs/CLionProjects/boost-asio-dns/dns.cpp
 
-CMakeFiles/boost_asio_dns.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boost_asio_dns.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yzs/CLionProjects/boost-asio-dns/main.cpp > CMakeFiles/boost_asio_dns.dir/main.cpp.i
+CMakeFiles/boost_asio_dns.dir/dns.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boost_asio_dns.dir/dns.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yzs/CLionProjects/boost-asio-dns/dns.cpp > CMakeFiles/boost_asio_dns.dir/dns.cpp.i
 
-CMakeFiles/boost_asio_dns.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boost_asio_dns.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yzs/CLionProjects/boost-asio-dns/main.cpp -o CMakeFiles/boost_asio_dns.dir/main.cpp.s
+CMakeFiles/boost_asio_dns.dir/dns.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boost_asio_dns.dir/dns.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yzs/CLionProjects/boost-asio-dns/dns.cpp -o CMakeFiles/boost_asio_dns.dir/dns.cpp.s
 
-CMakeFiles/boost_asio_dns.dir/main.cpp.o.requires:
+CMakeFiles/boost_asio_dns.dir/dns.cpp.o.requires:
 
-.PHONY : CMakeFiles/boost_asio_dns.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/boost_asio_dns.dir/dns.cpp.o.requires
 
-CMakeFiles/boost_asio_dns.dir/main.cpp.o.provides: CMakeFiles/boost_asio_dns.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/boost_asio_dns.dir/build.make CMakeFiles/boost_asio_dns.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/boost_asio_dns.dir/main.cpp.o.provides
+CMakeFiles/boost_asio_dns.dir/dns.cpp.o.provides: CMakeFiles/boost_asio_dns.dir/dns.cpp.o.requires
+	$(MAKE) -f CMakeFiles/boost_asio_dns.dir/build.make CMakeFiles/boost_asio_dns.dir/dns.cpp.o.provides.build
+.PHONY : CMakeFiles/boost_asio_dns.dir/dns.cpp.o.provides
 
-CMakeFiles/boost_asio_dns.dir/main.cpp.o.provides.build: CMakeFiles/boost_asio_dns.dir/main.cpp.o
+CMakeFiles/boost_asio_dns.dir/dns.cpp.o.provides.build: CMakeFiles/boost_asio_dns.dir/dns.cpp.o
+
+
+CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o: CMakeFiles/boost_asio_dns.dir/flags.make
+CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o: ../dns-server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o -c /home/yzs/CLionProjects/boost-asio-dns/dns-server.cpp
+
+CMakeFiles/boost_asio_dns.dir/dns-server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boost_asio_dns.dir/dns-server.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yzs/CLionProjects/boost-asio-dns/dns-server.cpp > CMakeFiles/boost_asio_dns.dir/dns-server.cpp.i
+
+CMakeFiles/boost_asio_dns.dir/dns-server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boost_asio_dns.dir/dns-server.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yzs/CLionProjects/boost-asio-dns/dns-server.cpp -o CMakeFiles/boost_asio_dns.dir/dns-server.cpp.s
+
+CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o.requires:
+
+.PHONY : CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o.requires
+
+CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o.provides: CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o.requires
+	$(MAKE) -f CMakeFiles/boost_asio_dns.dir/build.make CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o.provides.build
+.PHONY : CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o.provides
+
+CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o.provides.build: CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o
 
 
 # Object files for target boost_asio_dns
 boost_asio_dns_OBJECTS = \
-"CMakeFiles/boost_asio_dns.dir/main.cpp.o"
+"CMakeFiles/boost_asio_dns.dir/dns.cpp.o" \
+"CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o"
 
 # External object files for target boost_asio_dns
 boost_asio_dns_EXTERNAL_OBJECTS =
 
-boost_asio_dns: CMakeFiles/boost_asio_dns.dir/main.cpp.o
+boost_asio_dns: CMakeFiles/boost_asio_dns.dir/dns.cpp.o
+boost_asio_dns: CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o
 boost_asio_dns: CMakeFiles/boost_asio_dns.dir/build.make
 boost_asio_dns: /usr/local/lib/libboost_system.so
+boost_asio_dns: /usr/local/lib/libboost_thread.so
 boost_asio_dns: /usr/local/lib/libboost_regex.so
 boost_asio_dns: CMakeFiles/boost_asio_dns.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable boost_asio_dns"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable boost_asio_dns"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/boost_asio_dns.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -101,7 +128,8 @@ CMakeFiles/boost_asio_dns.dir/build: boost_asio_dns
 
 .PHONY : CMakeFiles/boost_asio_dns.dir/build
 
-CMakeFiles/boost_asio_dns.dir/requires: CMakeFiles/boost_asio_dns.dir/main.cpp.o.requires
+CMakeFiles/boost_asio_dns.dir/requires: CMakeFiles/boost_asio_dns.dir/dns.cpp.o.requires
+CMakeFiles/boost_asio_dns.dir/requires: CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o.requires
 
 .PHONY : CMakeFiles/boost_asio_dns.dir/requires
 

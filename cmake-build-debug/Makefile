@@ -123,32 +123,59 @@ boost_asio_dns/fast:
 	$(MAKE) -f CMakeFiles/boost_asio_dns.dir/build.make CMakeFiles/boost_asio_dns.dir/build
 .PHONY : boost_asio_dns/fast
 
-main.o: main.cpp.o
+dns-server.o: dns-server.cpp.o
 
-.PHONY : main.o
+.PHONY : dns-server.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/boost_asio_dns.dir/build.make CMakeFiles/boost_asio_dns.dir/main.cpp.o
-.PHONY : main.cpp.o
+dns-server.cpp.o:
+	$(MAKE) -f CMakeFiles/boost_asio_dns.dir/build.make CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o
+.PHONY : dns-server.cpp.o
 
-main.i: main.cpp.i
+dns-server.i: dns-server.cpp.i
 
-.PHONY : main.i
+.PHONY : dns-server.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/boost_asio_dns.dir/build.make CMakeFiles/boost_asio_dns.dir/main.cpp.i
-.PHONY : main.cpp.i
+dns-server.cpp.i:
+	$(MAKE) -f CMakeFiles/boost_asio_dns.dir/build.make CMakeFiles/boost_asio_dns.dir/dns-server.cpp.i
+.PHONY : dns-server.cpp.i
 
-main.s: main.cpp.s
+dns-server.s: dns-server.cpp.s
 
-.PHONY : main.s
+.PHONY : dns-server.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/boost_asio_dns.dir/build.make CMakeFiles/boost_asio_dns.dir/main.cpp.s
-.PHONY : main.cpp.s
+dns-server.cpp.s:
+	$(MAKE) -f CMakeFiles/boost_asio_dns.dir/build.make CMakeFiles/boost_asio_dns.dir/dns-server.cpp.s
+.PHONY : dns-server.cpp.s
+
+dns.o: dns.cpp.o
+
+.PHONY : dns.o
+
+# target to build an object file
+dns.cpp.o:
+	$(MAKE) -f CMakeFiles/boost_asio_dns.dir/build.make CMakeFiles/boost_asio_dns.dir/dns.cpp.o
+.PHONY : dns.cpp.o
+
+dns.i: dns.cpp.i
+
+.PHONY : dns.i
+
+# target to preprocess a source file
+dns.cpp.i:
+	$(MAKE) -f CMakeFiles/boost_asio_dns.dir/build.make CMakeFiles/boost_asio_dns.dir/dns.cpp.i
+.PHONY : dns.cpp.i
+
+dns.s: dns.cpp.s
+
+.PHONY : dns.s
+
+# target to generate assembly for a file
+dns.cpp.s:
+	$(MAKE) -f CMakeFiles/boost_asio_dns.dir/build.make CMakeFiles/boost_asio_dns.dir/dns.cpp.s
+.PHONY : dns.cpp.s
 
 # Help Target
 help:
@@ -159,9 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... boost_asio_dns"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... dns-server.o"
+	@echo "... dns-server.i"
+	@echo "... dns-server.s"
+	@echo "... dns.o"
+	@echo "... dns.i"
+	@echo "... dns.s"
 .PHONY : help
 
 

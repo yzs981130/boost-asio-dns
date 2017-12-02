@@ -84,7 +84,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/yzs/CLionProjects/boost-asio-dns/main.cpp">
+		<Unit filename="/home/yzs/CLionProjects/boost-asio-dns/common.h">
+			<Option target="boost_asio_dns"/>
+		</Unit>
+		<Unit filename="/home/yzs/CLionProjects/boost-asio-dns/dns-conn.h">
+			<Option target="boost_asio_dns"/>
+		</Unit>
+		<Unit filename="/home/yzs/CLionProjects/boost-asio-dns/dns-server.cpp">
+			<Option target="boost_asio_dns"/>
+		</Unit>
+		<Unit filename="/home/yzs/CLionProjects/boost-asio-dns/dns-server.h">
+			<Option target="boost_asio_dns"/>
+		</Unit>
+		<Unit filename="/home/yzs/CLionProjects/boost-asio-dns/dns.cpp">
+			<Option target="boost_asio_dns"/>
+		</Unit>
+		<Unit filename="/home/yzs/CLionProjects/boost-asio-dns/dns_packet.h">
 			<Option target="boost_asio_dns"/>
 		</Unit>
 		<Unit filename="/home/yzs/CLionProjects/boost-asio-dns/CMakeLists.txt">

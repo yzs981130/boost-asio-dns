@@ -11,6 +11,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <boost/asio.hpp>
+#include "dns_packet.h"
 
 using boost::asio::ip::udp;
 
