@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/boost_asio_dns.dir/main.cpp.o  -o boost_asio_dns -Wl,-rpath,/usr/local/lib /usr/local/lib/libboost_system.so /usr/local/lib/libboost_regex.so 

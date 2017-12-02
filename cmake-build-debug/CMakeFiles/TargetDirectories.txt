@@ -1,0 +1,3 @@
+/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/boost_asio_dns.dir

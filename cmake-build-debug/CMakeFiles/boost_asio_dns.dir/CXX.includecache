@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yzs/CLionProjects/boost-asio-dns/main.cpp
+cstdlib
+-
+iostream
+-
+boost/asio.hpp
+-
+
