@@ -21,8 +21,6 @@ queue
 -
 dns_packet.h
 /home/neuromancer/Projects/boost-asio-dns/dns_packet.h
-cstring
--
 
 /home/neuromancer/Projects/boost-asio-dns/dns_packet.h
 
