@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yzs/CLionProjects/boost-asio-dns
+CMAKE_SOURCE_DIR = /home/neuromancer/Projects/boost-asio-dns
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug
+CMAKE_BINARY_DIR = /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,33 +123,6 @@ boost_asio_dns/fast:
 	$(MAKE) -f CMakeFiles/boost_asio_dns.dir/build.make CMakeFiles/boost_asio_dns.dir/build
 .PHONY : boost_asio_dns/fast
 
-dns-server.o: dns-server.cpp.o
-
-.PHONY : dns-server.o
-
-# target to build an object file
-dns-server.cpp.o:
-	$(MAKE) -f CMakeFiles/boost_asio_dns.dir/build.make CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o
-.PHONY : dns-server.cpp.o
-
-dns-server.i: dns-server.cpp.i
-
-.PHONY : dns-server.i
-
-# target to preprocess a source file
-dns-server.cpp.i:
-	$(MAKE) -f CMakeFiles/boost_asio_dns.dir/build.make CMakeFiles/boost_asio_dns.dir/dns-server.cpp.i
-.PHONY : dns-server.cpp.i
-
-dns-server.s: dns-server.cpp.s
-
-.PHONY : dns-server.s
-
-# target to generate assembly for a file
-dns-server.cpp.s:
-	$(MAKE) -f CMakeFiles/boost_asio_dns.dir/build.make CMakeFiles/boost_asio_dns.dir/dns-server.cpp.s
-.PHONY : dns-server.cpp.s
-
 dns.o: dns.cpp.o
 
 .PHONY : dns.o
@@ -186,9 +159,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... boost_asio_dns"
-	@echo "... dns-server.o"
-	@echo "... dns-server.i"
-	@echo "... dns-server.s"
 	@echo "... dns.o"
 	@echo "... dns.i"
 	@echo "... dns.s"

@@ -6,27 +6,14 @@
 
 #IncludeRegexTransform: 
 
-/home/yzs/CLionProjects/boost-asio-dns/common.h
-boost/asio.hpp
--
-boost/shared_ptr.hpp
--
-boost/enable_shared_from_this.hpp
--
-boost/algorithm/string.hpp
--
-boost/lexical_cast.hpp
--
-boost/regex.hpp
--
-boost/bind.hpp
--
-boost/thread/thread.hpp
+/home/neuromancer/Projects/boost-asio-dns/dns.cpp
+cstdlib
 -
 iostream
 -
-string
+boost/asio.hpp
 -
+<<<<<<< HEAD
 
 /home/yzs/CLionProjects/boost-asio-dns/dns-server.cpp
 dns-server.h
@@ -40,13 +27,16 @@ dns_packet.h
 
 /home/yzs/CLionProjects/boost-asio-dns/dns.cpp
 cstdlib
+=======
+fstream
+>>>>>>> 601429ba729642804cfa99c8175876b8cf986b0e
 -
-iostream
+deque
 -
-boost/asio.hpp
+queue
 -
 dns_packet.h
-/home/yzs/CLionProjects/boost-asio-dns/dns_packet.h
+/home/neuromancer/Projects/boost-asio-dns/dns_packet.h
 
-/home/yzs/CLionProjects/boost-asio-dns/dns_packet.h
+/home/neuromancer/Projects/boost-asio-dns/dns_packet.h
 
