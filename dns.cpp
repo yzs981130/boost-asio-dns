@@ -30,13 +30,27 @@ public:
     };
     static Mode mode;
 
-    static std::string servers_filename;
-    ip_pool servers;
+    static ip_pool servers;
+
+    static void read_servers(const std::string &filename) {
+        std::ifstream file(filename);
+        if (!file.is_open()) {
+            std::cerr << "Error: failed to open " << filename << "." << std::endl;
+            exit(1);
+        }
+        std::string s;
+        while (file >> s)
+            servers.push_back(ipv4_type::from_string(s));
+        file.close();
+        if (servers.empty()) {
+            std::cerr << "Warning: empty servers list." << std::endl;
+            exit(1);
+        }
+    }
 
     server(boost::asio::io_service& io_service, const ipv4_type& ip, unsigned short port)
             : socket_(io_service, udp::endpoint(ip, port))
     {
-        read_servers(servers_filename);
         do_receive();
     }
 
@@ -109,21 +123,6 @@ public:
     }
 
 private:
-    void read_servers(const std::string& filename) {
-        std::ifstream file(filename);
-        if (!file.is_open()) {
-            std::cerr << "Error: failed to open " << filename << "." << std::endl;
-            exit(1);
-        }
-        std::string s;
-        while (file >> s)
-            servers.push_back(ipv4_type::from_string(s));
-        file.close();
-        if (servers.empty()) {
-            std::cerr << "Error: no availble video servers" << std::endl;
-            exit(1);
-        }
-    }
 
     udp::socket socket_;
     udp::endpoint sender_endpoint_;
@@ -156,18 +155,17 @@ private:
 class lsa_server : public server
 {
 public:
-    static std::string lsa_filename;
-    lsa_server(boost::asio::io_service& io_service, const ipv4_type& ip, unsigned short port)
-            : server(io_service, ip, port) {
+    static std::map<ipv4_type, ipv4_type> content_map;
 
+    static void read_lsa(const std::string &filename) {
         // read lsa records
         std::string sender;
         int32_t seq;
         std::string neighbours;
         std::map<std::string, std::pair<int32_t, std::string>> raw_records;
-        std::ifstream file(lsa_filename, std::ios::in);
+        std::ifstream file(filename, std::ios::in);
         if (!file.is_open()) {
-            std::cerr << "Error: unable to open " << lsa_filename << "." << std::endl;
+            std::cerr << "Error: unable to open " << filename << "." << std::endl;
             exit(1);
         }
         while(file >> sender >> seq >> neighbours) {
@@ -231,9 +229,14 @@ public:
             content_map[rec.first] = rec.second.first;
     }
 
+    lsa_server(boost::asio::io_service &io_service, const ipv4_type &ip, unsigned short port)
+            : server(io_service, ip, port) {
+
+
+    }
+
 private:
-    std::map<ipv4_type, ipv4_type> content_map;
-    ipv4_type get_server(const ipv4_type& proxy) override {
+    ipv4_type get_server(const ipv4_type &proxy) override {
         auto q = content_map.find(proxy);
         // if from un-recorded proxy, a answer is better than none
         if (q == content_map.end()) {
@@ -244,10 +247,9 @@ private:
     }
 };
 
-std::string lsa_server::lsa_filename;
-
-std::string server::servers_filename;
 server::Mode server::mode = server::round_robin;
+ip_pool server::servers;
+std::map<ipv4_type, ipv4_type> lsa_server::content_map;
 
 int main(int argc, char* argv[])
 {
@@ -269,8 +271,11 @@ int main(int argc, char* argv[])
         else {
             server::mode = server::lsa;
         }
-        lsa_server::lsa_filename = argv[argc-1];
-        round_robin_server::servers_filename = argv[argc-2];
+        std::string lsa_filename(argv[argc - 1]);
+        lsa_server::read_lsa(lsa_filename);
+        std::string servers_filename(argv[argc - 2]);
+        round_robin_server::read_servers(servers_filename);
+
         unsigned short listen_port = std::stoi(argv[argc-3]);
         ipv4_type listen_ip = ipv4_type::from_string(argv[argc-4]);
         std::string log = argv[argc-5];
