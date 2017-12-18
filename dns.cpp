@@ -14,12 +14,17 @@
 #include <fstream>
 #include <deque>
 #include <queue>
+#include <iomanip>
 #include "dns_packet.h"
+#include <boost/chrono.hpp>
 
 using boost::asio::ip::udp;
 
 typedef boost::asio::ip::address_v4 ipv4_type;
 typedef std::vector<ipv4_type> ip_pool;
+
+
+std::ofstream loggger;
 
 class server
 {
@@ -72,6 +77,12 @@ public:
 
                         if (std::strcmp(name, "\005video\003pku\003edu\002cn") == 0) {
                             ipv4_type ans_ip = get_server(sender_endpoint_.address().to_v4());
+                            std::string hostname(name);
+                            for (std::string::iterator i = hostname.begin(); i != hostname.end(); ) {
+                                uint8_t next = (uint8_t)(*i);
+                                *i = '.';
+                                i += next + 1;
+                            }
                             header->qr = 1;
                             header->aa = 1;
                             header->tc = 0;
@@ -79,8 +90,8 @@ public:
                             header->ra = 0;
                             header->z = 0;
                             header->rcode = 0;
-                            header->q_count = 0;
-                            header->ans_count = 1;
+                            header->q_count = ntohs(1);
+                            header->ans_count = ntohs(1);
                             header->auth_count = 0;
                             header->add_count = 0;
                             uint16_t *rname = reinterpret_cast<uint16_t*>(data_ + sizeof(DNS_HEADER) + name_len + sizeof(QUESTION));
@@ -92,8 +103,12 @@ public:
                             ans->data_len = htons(sizeof(uint32_t)); // length of 32bit
                             uint32_t *ip = reinterpret_cast<uint32_t*>(ans+1);
                             std::memcpy(ip, ans_ip.to_bytes()._M_elems, sizeof(uint32_t));
-                            std::cout << uint32_t(*ip) << std::endl;
+                            //std::cout << uint32_t(*ip) << std::endl;
+                            //uint8_t *addition = reinterpret_cast<uint8_t *>(ip+1);
+                            //std::memcpy(addition, "\000\000\224\360\005\000\000\000\000\000\000", 11);
                             do_send(sizeof(DNS_HEADER) + name_len + sizeof(QUESTION) + sizeof(uint16_t ) + sizeof(ANSWER) + sizeof(uint32_t));
+                            //do_send(sizeof(DNS_HEADER) + name_len + sizeof(QUESTION) + sizeof(uint16_t ) + sizeof(ANSWER) + sizeof(uint32_t) + 11);
+                            loggger << std::setprecision(10) << (double)boost::chrono::system_clock::now().time_since_epoch().count()/1e9 << " " << sender_endpoint_.address().to_string() << " " << hostname.substr(1) << " " << ans_ip.to_string() << std::endl;
                         } else {
                             header->qr = 1;
                             header->aa = 1;
@@ -102,11 +117,11 @@ public:
                             header->ra = 0;
                             header->z = 0;
                             header->rcode = 3;
-                            header->q_count = 0;
-                            header->ans_count = 0;
+                            header->q_count = ntohs(1);
+                            header->ans_count = ntohs(0);
                             header->auth_count = 0;
                             header->add_count = 0;
-                            do_send(sizeof(DNS_HEADER));
+                            do_send(sizeof(DNS_HEADER) + name_len + sizeof(QUESTION));
                         }
                     }
                     else
@@ -265,9 +280,6 @@ int main(int argc, char* argv[])
             return 1;
         }
         if (argc == 7) {
-            for(int i = 0; i < argc; i++)
-                std::cout << argv[i] << std::endl;
-
 
             if (std::string(argv[1]) == "-r") {
                 server::mode = server::round_robin;
@@ -285,7 +297,13 @@ int main(int argc, char* argv[])
 
         unsigned short listen_port = std::stoi(argv[argc-3]);
         ipv4_type listen_ip = ipv4_type::from_string(argv[argc-4]);
-        std::string log = argv[argc-5];
+        std::string logger_file = argv[argc-5];
+
+        loggger.open(logger_file, std::ios::out|std::ios::app);
+        if (!loggger.is_open()) {
+            std::cerr << "Fatal: Failed to open " << logger_file << "." << std::endl;
+            exit(1);
+        }
 
         boost::asio::io_service io_service;
         if (server::mode == server::round_robin) {
