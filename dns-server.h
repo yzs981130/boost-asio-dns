@@ -7,6 +7,7 @@
 
 
 #include "common.h"
+#include "dns_packet.h"
 
 using boost::asio::ip::udp;
 
@@ -27,6 +28,8 @@ private:
                      std::size_t /*bytes_transferred*/)
     {
     }
+
+    void packet_generate(bool query);
 
     udp::socket socket_;
     udp::endpoint endpoint_;

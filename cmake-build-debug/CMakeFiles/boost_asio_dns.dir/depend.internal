@@ -5,6 +5,7 @@ CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o
  /home/yzs/CLionProjects/boost-asio-dns/common.h
  /home/yzs/CLionProjects/boost-asio-dns/dns-server.cpp
  /home/yzs/CLionProjects/boost-asio-dns/dns-server.h
+ /home/yzs/CLionProjects/boost-asio-dns/dns_packet.h
 CMakeFiles/boost_asio_dns.dir/dns.cpp.o
  /home/yzs/CLionProjects/boost-asio-dns/dns.cpp
  /home/yzs/CLionProjects/boost-asio-dns/dns_packet.h

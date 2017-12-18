@@ -35,6 +35,8 @@ dns-server.h
 /home/yzs/CLionProjects/boost-asio-dns/dns-server.h
 common.h
 /home/yzs/CLionProjects/boost-asio-dns/common.h
+dns_packet.h
+/home/yzs/CLionProjects/boost-asio-dns/dns_packet.h
 
 /home/yzs/CLionProjects/boost-asio-dns/dns.cpp
 cstdlib

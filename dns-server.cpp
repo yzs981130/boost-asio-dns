@@ -32,7 +32,7 @@ void server::handle_receive(const boost::system::error_code& error,
     if (!error || error == boost::asio::error::message_size)
     {
         boost::shared_ptr<std::string> message(
-                new std::string(make_daytime_string()));
+                new std::string("udp test"));
 
         socket_.async_send_to(boost::asio::buffer(*message), endpoint_,
                               boost::bind(&server::handle_send, this, message,
@@ -41,4 +41,11 @@ void server::handle_receive(const boost::system::error_code& error,
 
         start_receive();
     }
+}
+
+void server::packet_generate(bool query) {
+
+    DNS_HEADER header;
+    auto& [id, , , aa, , qr, , , , , , , , , ] = header;
+    auto [id, rd, tc, aa, opcode, qr, rcode, cd, ad, z, ra, q_count, ans_count, auth_count, add_count] = header;
 }

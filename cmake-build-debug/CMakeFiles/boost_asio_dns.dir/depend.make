@@ -4,6 +4,7 @@
 CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o: ../common.h
 CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o: ../dns-server.cpp
 CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o: ../dns-server.h
+CMakeFiles/boost_asio_dns.dir/dns-server.cpp.o: ../dns_packet.h
 
 CMakeFiles/boost_asio_dns.dir/dns.cpp.o: ../dns.cpp
 CMakeFiles/boost_asio_dns.dir/dns.cpp.o: ../dns_packet.h
