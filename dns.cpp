@@ -70,7 +70,7 @@ public:
                             name_len += name[name_len] + 1;
                         name_len++;  // include the last '\0'
 
-                        if (std::strcmp(name, "\x05video\x03pku\x03edu\x02cn") == 0) {
+                        if (std::strcmp(name, "\005video\003pku\003edu\002cn") == 0) {
                             ipv4_type ans_ip = get_server(sender_endpoint_.address().to_v4());
                             header->qr = 1;
                             header->aa = 1;
