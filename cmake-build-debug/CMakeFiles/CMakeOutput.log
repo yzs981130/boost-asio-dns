@@ -1,4 +1,4 @@
-The system is: Linux - 4.4.0-101-generic - x86_64
+The system is: Linux - 4.10.0-40-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_32141/fast"
-/usr/bin/make -f CMakeFiles/cmTC_32141.dir/build.make CMakeFiles/cmTC_32141.dir/build
-make[1]: Entering directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_32141.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_32141.dir/testCCompiler.c.o   -c /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_32141
-/home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32141.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_32141.dir/testCCompiler.c.o  -o cmTC_32141 
-make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_02e0f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_02e0f.dir/build.make CMakeFiles/cmTC_02e0f.dir/build
+make[1]: Entering directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_02e0f.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_02e0f.dir/testCCompiler.c.o   -c /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_02e0f
+/home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02e0f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_02e0f.dir/testCCompiler.c.o  -o cmTC_02e0f 
+make[1]: Leaving directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f6b38/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f6b38.dir/build.make CMakeFiles/cmTC_f6b38.dir/build
-make[1]: Entering directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f6b38.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_f6b38.dir/CMakeCCompilerABI.c.o   -c /home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_f6b38
-/home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6b38.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_f6b38.dir/CMakeCCompilerABI.c.o  -o cmTC_f6b38 
+Run Build Command:"/usr/bin/make" "cmTC_0cbff/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0cbff.dir/build.make CMakeFiles/cmTC_0cbff.dir/build
+make[1]: Entering directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0cbff.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_0cbff.dir/CMakeCCompilerABI.c.o   -c /home/yzs/Downloads/clion-2017.3/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_0cbff
+/home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0cbff.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_0cbff.dir/CMakeCCompilerABI.c.o  -o cmTC_0cbff 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -59,23 +59,23 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f6b38' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxBtZ3z.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_f6b38 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_f6b38.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_0cbff' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgY8dRz.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_0cbff /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_0cbff.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f6b38/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_f6b38.dir/build.make CMakeFiles/cmTC_f6b38.dir/build]
-  ignore line: [make[1]: Entering directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_f6b38.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_f6b38.dir/CMakeCCompilerABI.c.o   -c /home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_f6b38]
-  ignore line: [/home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6b38.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_f6b38.dir/CMakeCCompilerABI.c.o  -o cmTC_f6b38 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_0cbff/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_0cbff.dir/build.make CMakeFiles/cmTC_0cbff.dir/build]
+  ignore line: [make[1]: Entering directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_0cbff.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_0cbff.dir/CMakeCCompilerABI.c.o   -c /home/yzs/Downloads/clion-2017.3/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_0cbff]
+  ignore line: [/home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0cbff.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_0cbff.dir/CMakeCCompilerABI.c.o  -o cmTC_0cbff ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -85,13 +85,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f6b38' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxBtZ3z.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_f6b38 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_f6b38.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_0cbff' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgY8dRz.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_0cbff /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_0cbff.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccxBtZ3z.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccgY8dRz.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -109,7 +109,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f6b38] ==> ignore
+    arg [cmTC_0cbff] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -121,7 +121,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_f6b38.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_0cbff.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -149,17 +149,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_754e8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_754e8.dir/build.make CMakeFiles/cmTC_754e8.dir/build
-make[1]: Entering directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_754e8.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_754e8.dir/feature_tests.c.o   -c /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_754e8
-/home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_754e8.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_754e8.dir/feature_tests.c.o  -o cmTC_754e8 
-make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_bfddb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bfddb.dir/build.make CMakeFiles/cmTC_bfddb.dir/build
+make[1]: Entering directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bfddb.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_bfddb.dir/feature_tests.c.o   -c /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_bfddb
+/home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bfddb.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_bfddb.dir/feature_tests.c.o  -o cmTC_bfddb 
+make[1]: Leaving directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -169,17 +169,17 @@ make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-buil
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f87d3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f87d3.dir/build.make CMakeFiles/cmTC_f87d3.dir/build
-make[1]: Entering directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f87d3.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_f87d3.dir/feature_tests.c.o   -c /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_f87d3
-/home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f87d3.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f87d3.dir/feature_tests.c.o  -o cmTC_f87d3 
-make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_f9230/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f9230.dir/build.make CMakeFiles/cmTC_f9230.dir/build
+make[1]: Entering directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f9230.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_f9230.dir/feature_tests.c.o   -c /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_f9230
+/home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9230.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f9230.dir/feature_tests.c.o  -o cmTC_f9230 
+make[1]: Leaving directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -189,17 +189,17 @@ make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-buil
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_42d69/fast"
-/usr/bin/make -f CMakeFiles/cmTC_42d69.dir/build.make CMakeFiles/cmTC_42d69.dir/build
-make[1]: Entering directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_42d69.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_42d69.dir/feature_tests.c.o   -c /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_42d69
-/home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42d69.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_42d69.dir/feature_tests.c.o  -o cmTC_42d69 
-make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_10b73/fast"
+/usr/bin/make -f CMakeFiles/cmTC_10b73.dir/build.make CMakeFiles/cmTC_10b73.dir/build
+make[1]: Entering directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_10b73.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_10b73.dir/feature_tests.c.o   -c /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_10b73
+/home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10b73.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_10b73.dir/feature_tests.c.o  -o cmTC_10b73 
+make[1]: Leaving directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -207,30 +207,30 @@ make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-buil
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c1807/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c1807.dir/build.make CMakeFiles/cmTC_c1807.dir/build
-make[1]: Entering directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c1807.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_c1807.dir/testCXXCompiler.cxx.o -c /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_c1807
-/home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1807.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_c1807.dir/testCXXCompiler.cxx.o  -o cmTC_c1807 
-make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_fe12d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fe12d.dir/build.make CMakeFiles/cmTC_fe12d.dir/build
+make[1]: Entering directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fe12d.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_fe12d.dir/testCXXCompiler.cxx.o -c /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_fe12d
+/home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe12d.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_fe12d.dir/testCXXCompiler.cxx.o  -o cmTC_fe12d 
+make[1]: Leaving directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c0628/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c0628.dir/build.make CMakeFiles/cmTC_c0628.dir/build
-make[1]: Entering directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c0628.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_c0628.dir/CMakeCXXCompilerABI.cpp.o -c /home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_c0628
-/home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0628.dir/link.txt --verbose=1
-/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_c0628.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c0628 
+Run Build Command:"/usr/bin/make" "cmTC_d11e2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d11e2.dir/build.make CMakeFiles/cmTC_d11e2.dir/build
+make[1]: Entering directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d11e2.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_d11e2.dir/CMakeCXXCompilerABI.cpp.o -c /home/yzs/Downloads/clion-2017.3/bin/cmake/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_d11e2
+/home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d11e2.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_d11e2.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d11e2 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -240,23 +240,23 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c0628' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cch03b0O.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_c0628 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_c0628.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d11e2' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1sFr42.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_d11e2 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_d11e2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_c0628/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_c0628.dir/build.make CMakeFiles/cmTC_c0628.dir/build]
-  ignore line: [make[1]: Entering directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_c0628.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_c0628.dir/CMakeCXXCompilerABI.cpp.o -c /home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_c0628]
-  ignore line: [/home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0628.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_c0628.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c0628 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d11e2/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d11e2.dir/build.make CMakeFiles/cmTC_d11e2.dir/build]
+  ignore line: [make[1]: Entering directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_d11e2.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_d11e2.dir/CMakeCXXCompilerABI.cpp.o -c /home/yzs/Downloads/clion-2017.3/bin/cmake/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_d11e2]
+  ignore line: [/home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d11e2.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_d11e2.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d11e2 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -266,13 +266,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c0628' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cch03b0O.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_c0628 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_c0628.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d11e2' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1sFr42.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_d11e2 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_d11e2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cch03b0O.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc1sFr42.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -290,7 +290,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_c0628] ==> ignore
+    arg [cmTC_d11e2] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -302,7 +302,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_c0628.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_d11e2.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -328,17 +328,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_87904/fast"
-/usr/bin/make -f CMakeFiles/cmTC_87904.dir/build.make CMakeFiles/cmTC_87904.dir/build
-make[1]: Entering directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_87904.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_87904.dir/feature_tests.cxx.o -c /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_87904
-/home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87904.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_87904.dir/feature_tests.cxx.o  -o cmTC_87904 
-make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_d1661/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d1661.dir/build.make CMakeFiles/cmTC_d1661.dir/build
+make[1]: Entering directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d1661.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_d1661.dir/feature_tests.cxx.o -c /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_d1661
+/home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1661.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_d1661.dir/feature_tests.cxx.o  -o cmTC_d1661 
+make[1]: Leaving directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -401,17 +401,17 @@ make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-buil
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ca806/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ca806.dir/build.make CMakeFiles/cmTC_ca806.dir/build
-make[1]: Entering directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_ca806.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_ca806.dir/feature_tests.cxx.o -c /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_ca806
-/home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca806.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_ca806.dir/feature_tests.cxx.o  -o cmTC_ca806 
-make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_cf973/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cf973.dir/build.make CMakeFiles/cmTC_cf973.dir/build
+make[1]: Entering directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cf973.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_cf973.dir/feature_tests.cxx.o -c /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_cf973
+/home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf973.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_cf973.dir/feature_tests.cxx.o  -o cmTC_cf973 
+make[1]: Leaving directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -474,17 +474,17 @@ make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-buil
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8d8fe/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8d8fe.dir/build.make CMakeFiles/cmTC_8d8fe.dir/build
-make[1]: Entering directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8d8fe.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_8d8fe.dir/feature_tests.cxx.o -c /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_8d8fe
-/home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d8fe.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_8d8fe.dir/feature_tests.cxx.o  -o cmTC_8d8fe 
-make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_9eab4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9eab4.dir/build.make CMakeFiles/cmTC_9eab4.dir/build
+make[1]: Entering directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9eab4.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_9eab4.dir/feature_tests.cxx.o -c /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_9eab4
+/home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9eab4.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_9eab4.dir/feature_tests.cxx.o  -o cmTC_9eab4 
+make[1]: Leaving directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -547,17 +547,17 @@ make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-buil
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_eff76/fast"
-/usr/bin/make -f CMakeFiles/cmTC_eff76.dir/build.make CMakeFiles/cmTC_eff76.dir/build
-make[1]: Entering directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_eff76.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_eff76.dir/feature_tests.cxx.o -c /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_eff76
-/home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eff76.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_eff76.dir/feature_tests.cxx.o  -o cmTC_eff76 
-make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_ebd34/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ebd34.dir/build.make CMakeFiles/cmTC_ebd34.dir/build
+make[1]: Entering directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ebd34.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_ebd34.dir/feature_tests.cxx.o -c /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ebd34
+/home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ebd34.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_ebd34.dir/feature_tests.cxx.o  -o cmTC_ebd34 
+make[1]: Leaving directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -618,30 +618,30 @@ make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-buil
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
 Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0bbfb/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0bbfb.dir/build.make CMakeFiles/cmTC_0bbfb.dir/build
-make[1]: Entering directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0bbfb.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_0bbfb.dir/CheckIncludeFile.c.o   -c /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_0bbfb
-/home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bbfb.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_0bbfb.dir/CheckIncludeFile.c.o  -o cmTC_0bbfb 
-make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_ba3cc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ba3cc.dir/build.make CMakeFiles/cmTC_ba3cc.dir/build
+make[1]: Entering directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ba3cc.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ba3cc.dir/CheckIncludeFile.c.o   -c /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ba3cc
+/home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba3cc.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ba3cc.dir/CheckIncludeFile.c.o  -o cmTC_ba3cc 
+make[1]: Leaving directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
-Change Dir: /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_94a3b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_94a3b.dir/build.make CMakeFiles/cmTC_94a3b.dir/build
-make[1]: Entering directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_94a3b.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_94a3b.dir/CheckFunctionExists.c.o   -c /home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/share/cmake-3.9/Modules/CheckFunctionExists.c
-Linking C executable cmTC_94a3b
-/home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94a3b.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_94a3b.dir/CheckFunctionExists.c.o  -o cmTC_94a3b -lpthread 
-make[1]: Leaving directory '/home/neuromancer/Projects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_829e2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_829e2.dir/build.make CMakeFiles/cmTC_829e2.dir/build
+make[1]: Entering directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_829e2.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_829e2.dir/CheckFunctionExists.c.o   -c /home/yzs/Downloads/clion-2017.3/bin/cmake/share/cmake-3.9/Modules/CheckFunctionExists.c
+Linking C executable cmTC_829e2
+/home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_829e2.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_829e2.dir/CheckFunctionExists.c.o  -o cmTC_829e2 -lpthread 
+make[1]: Leaving directory '/home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 

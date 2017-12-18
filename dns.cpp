@@ -83,13 +83,17 @@ public:
                             header->ans_count = 1;
                             header->auth_count = 0;
                             header->add_count = 0;
-                            ANSWER *ans = (ANSWER*)(data_ + sizeof(DNS_HEADER) + name_len);
-                            ans->type = 1;
-                            ans->_class = 1;
-                            ans->ttl = 0;
-                            ans->data_len = sizeof(uint32_t); // length of 32bit
+                            uint16_t *rname = reinterpret_cast<uint16_t*>(data_ + sizeof(DNS_HEADER) + name_len + sizeof(QUESTION));
+                            *rname = htons(0xC00C);
+                            ANSWER *ans = (ANSWER*)(rname + 1);
+                            ans->type = htons(1);
+                            ans->_class = htons(1);
+                            ans->ttl = htonl(0);
+                            ans->data_len = htons(sizeof(uint32_t)); // length of 32bit
                             uint32_t *ip = reinterpret_cast<uint32_t*>(ans+1);
-                            do_send(sizeof(DNS_HEADER) + name_len + sizeof(ANSWER) + sizeof(uint32_t));
+                            std::memcpy(ip, ans_ip.to_bytes()._M_elems, sizeof(uint32_t));
+                            std::cout << uint32_t(*ip) << std::endl;
+                            do_send(sizeof(DNS_HEADER) + name_len + sizeof(QUESTION) + sizeof(uint16_t ) + sizeof(ANSWER) + sizeof(uint32_t));
                         } else {
                             header->qr = 1;
                             header->aa = 1;
@@ -257,22 +261,25 @@ int main(int argc, char* argv[])
     {
         if (argc != 7 && argc != 6)
         {
-            std::cerr << "Usage: " << argv[0] << "[-r] <log> <ip> <port> <servers> <LSAs>" << std::endl;
+            std::cerr << "Usage: " << argv[0] << " [-r] <log> <ip> <port> <servers> <LSAs>" << std::endl;
             return 1;
         }
         if (argc == 7) {
-            if (argv[1] == "-r") {
+            for(int i = 0; i < argc; i++)
+                std::cout << argv[i] << std::endl;
+
+
+            if (std::string(argv[1]) == "-r") {
                 server::mode = server::round_robin;
             } else {
-                std::cerr << "Usage: " << argv[0] << "[-r] <log> <ip> <port> <servers> <LSAs>" << std::endl;
+                std::cerr << "Usage: " << argv[0] << " [-r] <log> <ip> <port> <servers> <LSAs>" << std::endl;
                 return 1;
             }
         }
         else {
             server::mode = server::lsa;
         }
-        std::string lsa_filename(argv[argc - 1]);
-        lsa_server::read_lsa(lsa_filename);
+
         std::string servers_filename(argv[argc - 2]);
         round_robin_server::read_servers(servers_filename);
 
@@ -286,6 +293,8 @@ int main(int argc, char* argv[])
             io_service.run();
         }
         else if (server::mode == server::lsa) {
+            std::string lsa_filename(argv[argc - 1]);
+            lsa_server::read_lsa(lsa_filename);
             lsa_server lsa_s(io_service, listen_ip, listen_port);
             io_service.run();
         }

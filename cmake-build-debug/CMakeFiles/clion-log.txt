@@ -1,5 +1,5 @@
-/home/neuromancer/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/neuromancer/Projects/boost-asio-dns
--- Boost version: 1.58.0
+/home/yzs/Downloads/clion-2017.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/yzs/CLionProjects/boost-asio-dns
+-- Boost version: 1.65.1
 -- Found the following Boost libraries:
 --   system
 --   thread
@@ -9,4 +9,4 @@
 --   atomic
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/neuromancer/Projects/boost-asio-dns/cmake-build-debug
+-- Build files have been written to: /home/yzs/CLionProjects/boost-asio-dns/cmake-build-debug
