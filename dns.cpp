@@ -20,7 +20,7 @@
 
 using boost::asio::ip::udp;
 
-typedef boost::asio::ip::address_v4 ipv4_type;
+typedef std::string ipv4_type;
 typedef std::vector<ipv4_type> ip_pool;
 
 
@@ -45,7 +45,7 @@ public:
         }
         std::string s;
         while (file >> s)
-            servers.push_back(ipv4_type::from_string(s));
+            servers.push_back(s);
         file.close();
         if (servers.empty()) {
             std::cerr << "Warning: empty servers list." << std::endl;
@@ -54,8 +54,9 @@ public:
     }
 
     server(boost::asio::io_service& io_service, const ipv4_type& ip, unsigned short port)
-            : socket_(io_service, udp::endpoint(ip, port))
-    {
+            : socket_(io_service,
+                      udp::endpoint(boost::asio::ip::address_v4::from_string(ip),
+                                    port)) {
         do_receive();
     }
 
@@ -76,7 +77,7 @@ public:
                         name_len++;  // include the last '\0'
 
                         if (std::strcmp(name, "\005video\003pku\003edu\002cn") == 0) {
-                            ipv4_type ans_ip = get_server(sender_endpoint_.address().to_v4());
+                            ipv4_type ans_ip = get_server(sender_endpoint_.address().to_string());
                             std::string hostname(name);
                             for (std::string::iterator i = hostname.begin(); i != hostname.end(); ) {
                                 uint8_t next = (uint8_t)(*i);
@@ -102,13 +103,18 @@ public:
                             ans->ttl = htonl(0);
                             ans->data_len = htons(sizeof(uint32_t)); // length of 32bit
                             uint32_t *ip = reinterpret_cast<uint32_t*>(ans+1);
-                            std::memcpy(ip, ans_ip.to_bytes()._M_elems, sizeof(uint32_t));
+                            std::memcpy(ip,
+                                        boost::asio::ip::address_v4::from_string(ans_ip).to_bytes()._M_elems,
+                                        sizeof(uint32_t));
                             //std::cout << uint32_t(*ip) << std::endl;
                             //uint8_t *addition = reinterpret_cast<uint8_t *>(ip+1);
                             //std::memcpy(addition, "\000\000\224\360\005\000\000\000\000\000\000", 11);
                             do_send(sizeof(DNS_HEADER) + name_len + sizeof(QUESTION) + sizeof(uint16_t ) + sizeof(ANSWER) + sizeof(uint32_t));
                             //do_send(sizeof(DNS_HEADER) + name_len + sizeof(QUESTION) + sizeof(uint16_t ) + sizeof(ANSWER) + sizeof(uint32_t) + 11);
-                            loggger << std::setprecision(10) << (double)boost::chrono::system_clock::now().time_since_epoch().count()/1e9 << " " << sender_endpoint_.address().to_string() << " " << hostname.substr(1) << " " << ans_ip.to_string() << std::endl;
+                            loggger << std::setprecision(10)
+                                    << (double) boost::chrono::system_clock::now().time_since_epoch().count() / 1e9
+                                    << " " << sender_endpoint_.address().to_string() << " " << hostname.substr(1) << " "
+                                    << ans_ip << std::endl;
                         } else {
                             header->qr = 1;
                             header->aa = 1;
@@ -200,13 +206,17 @@ public:
 
         std::map<ipv4_type, std::vector<ipv4_type>> reverse_records;
         for (auto iter : raw_records) {
-            ipv4_type src_ip = boost::asio::ip::address_v4::from_string(iter.first);
-
+            ipv4_type src_ip = iter.first;
             std::stringstream ss(iter.second.second);
             std::string s;
             while(std::getline(ss, s, ',')) {
-                ipv4_type nb_ip = boost::asio::ip::address_v4::from_string(s);
-                reverse_records[nb_ip].push_back(src_ip);
+                auto rec = reverse_records.find(s);
+                if (rec != reverse_records.end())
+                    rec->second.push_back(src_ip);
+                else {
+                    reverse_records[s] = std::vector<ipv4_type>();
+                    reverse_records[s].push_back(src_ip);
+                }
             }
         }
 
@@ -259,7 +269,7 @@ private:
         auto q = content_map.find(proxy);
         // if from un-recorded proxy, a answer is better than none
         if (q == content_map.end()) {
-            std::cout << "Warning: query from unrecorded proxy " << proxy.to_string() << "." << std::endl;
+            std::cout << "Warning: query from unrecorded proxy " << proxy << "." << std::endl;
             q = content_map.begin();
         }
         return q->second;
@@ -293,10 +303,10 @@ int main(int argc, char* argv[])
         }
 
         std::string servers_filename(argv[argc - 2]);
-        round_robin_server::read_servers(servers_filename);
+        server::read_servers(servers_filename);
 
         unsigned short listen_port = std::stoi(argv[argc-3]);
-        ipv4_type listen_ip = ipv4_type::from_string(argv[argc-4]);
+        ipv4_type listen_ip = argv[argc - 4];
         std::string logger_file = argv[argc-5];
 
         loggger.open(logger_file, std::ios::out|std::ios::app);
